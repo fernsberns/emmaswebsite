@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="galleryapp">
+<head>
+<title>Emma Sadicon</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="controllers/gallerycontroller.js"></script>
+
+
+</head>
+
+<body style="overflow-y: hidden;" ng-controller="gallerycontroller">
+
+
+    <div>
+        
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="ml-5" style="position: fixed;background-color: white; opacity: 0.8; z-index: 1; color: black;">
+            <div class="sidebar-nav p-3" style="list-style: none; transform: translate(0px,30px);">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       <img src="505523-22517386-mango_LOGO_2.png" style="height: 120px;transform: translate(0,-25px);">
+                    </a>
+                </li>
+                <li>
+                    <small><a href="album1.html" style="color:black;">{{listofnames[0]}}</a></small>
+                </li>
+                 <li>
+                    <small><a href="album2.html" style="color:black;">{{listofnames[1]}}</a></small>
+                </li>
+                 <li>
+                    <small><a href="album3.html" style="color:red;font-weight: bold;">{{listofnames[2]}}</a></small>
+                </li>
+                 <li>
+                    <small><a href="album4.html" style="color:black;">{{listofnames[3]}}</a></small>
+                </li>
+                 <li>
+                    <small><a href="album5.html" style="color:black;">{{listofnames[4]}}</a></small>
+                </li>
+                 <li>
+                    <small><a href="album6.html" style="color:black;">{{listofnames[5]}}</a></small>
+                </li>
+                 <li>
+                    <small><a href="album7.html" style="color:black;">{{listofnames[6]}}</a></small>
+                </li>
+                 <li>
+                    <small><a href="album8.html" style="color:black;">{{listofnames[7]}}</a></small>
+                </li>
+                 <li>
+                    <small><a href="album9.html" style="color:black;">{{listofnames[8]}}</a></small>
+                </li>
+                 <li>
+                    <small><a href="album10.html" style="color:black;">{{listofnames[9]}}</a></small>
+                </li>
+                 <li>
+                    <small><a href="album11.html" style="color:black;">{{listofnames[10]}}</a></small>
+                </li>
+                 <li>
+                    <small><a href="album12.html" style="color:black;">{{listofnames[11]}}</a></small>
+                </li>
+                 <li>
+                    <small><a href="album13.html" style="color:black;">{{listofnames[12]}}</a></small>
+                </li>
+                 <li>
+                    <small><a href="album14.html" style="color:black;">{{listofnames[13]}}</a></small>
+                </li>
+                 <li>
+                    <small><a href="album15.html" style="color:black;">{{listofnames[14]}}</a></small>
+                </li>
+
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+    </div>
+    <div id="content" class="col-md-12" style="white-space: nowrap; overflow-x: auto;overflow-y: hidden; max-height: 720px; ">  
+
+    
+        
+        <div class="col-md-2 m-4" style="display: inline-block;"></div><img ng-repeat="l in options3.langs" class="m-1 align-top"  style="display: inline-block;max-width:auto;max-height:720px;height: 720px;" src="{{ l.link }}">
+        <div >
+
+       
+    </div>
+
+
+
+</body>
+
+
+</html>
